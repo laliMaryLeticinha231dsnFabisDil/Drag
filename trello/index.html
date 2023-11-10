@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Trello-leticia</title>
 </head>
+
 <body>
     <h1>Minhas Tarefas:</h1>
-    <div class="coluna" id="a-fazer">
-        <h2> A Fazer</h2>
-        <ul class="tarefas" id="tarefas-a-fazer"></ul>
+    <div class="tudo">
+        <div class="coluna" id="a-fazer">
+            <h2> A Fazer</h2>
+            <ul class="tarefas" id="tarefas-a-fazer"></ul>
+        </div>
+        <div class="coluna" id="feito">
+            <h2>Feito</h2>
+            <ul class="tarefas" id="tarefas-feito"></ul>
+        </div>
+        <div class="coluna" id="Fazendo">
+            <h2>Fazendo</h2>
+            <ul class="tarefas" id="fazendo"></ul>
+        </div>
     </div>
-    <div class="coluna" id="feito">
-        <h2>Feito</h2>
-        <ul class="tarefas" id="tarefas-feito"></ul>
-    </div>
-    <div class="coluna" id="Fazendo">
-        <h2>Fazendo</h2>
-        <ul class="tarefas" id="fazendo"></ul>
-    </div>
+
 
     <form id="adicionar-tarefa">
         <label for="nova-tarefa">Tarefa:</label>
-        <input type="text" class="nova-tarefa" id="nova-tarefa">
+        <input type="text" class="nova-tarefa" id="nova-tarefa" placeholder="Digite Aqui">
         <button type="submit">Adicionar</button>
     </form>
 
     <script src="main.js"></script>
 </body>
+
 </html>
